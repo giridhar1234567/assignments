@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\definecolor{mGreen}{rgb}{0,0.6,0}
+\definecolor{mGray}{rgb}{0.5,0.5,0.5}
+\definecolor{mPurple}{rgb}{0.58,0,0.82}
+\definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{CStyle}{
+    backgroundcolor=\color{backgroundColour},   
+    commentstyle=\color{mGreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{mGray},
+    stringstyle=\color{mPurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    language=C
+}
+
+
+
+\begin{document}
+\begin{lstlisting}[style=CStyle]
+//Code written on December 5, 2020
+//Revised  December 8, 2020
+// by Giridhar paida
+//This program implements a boolean function in C
+
+#include <stdio.h>
+
+//The  main function
+int main(void)
+{
+
+//2 bits = 1 baud
+//4 bits = 1 nibble
+//8 bits = 1 byte
+
+//unsigned char takes input as 1 byte
+
+unsigned char  Z=0x00,Y=0x01,X=0x01,W=0x01;//inputs in hex	
+unsigned char one = 0x01;//used for displaying the output in bit
+unsigned char A,B,C,D;//outputs
+A = ((~W)&(~X)&(~Y)&(~Z))|((~W)&(X)&(~Y)&(~Z))|((~W)&(~X)&Y&(~Z))|((~W)&X&Y&(~Z))|((~W)&(~X)&(~Y)&(Z));
+//Boolean function for A
+.
+B = (W&(~X)&(~Y)&(~Z))|((~W)&X&(~Y)&(~Z))|(W&(~X)&Y&(~Z))|((~W)&X&Y&(~Z));//Boolean fuction
+
+C = (W&X&(~Y)&(~Z))|((~W)&(~X)&Y&(~Z))|((W)&(~X)&Y&(~Z))|((~W)&X&Y&(~Z));//Boolean fuction
+
+D = (W&X&Y&(~Z))|((~W)&(~X)&(~Y)&Z);//Boolean function for D
+printf ("%x\n",one&A);// Output A 
+printf ("%x\n",one&B);// OutputB
+printf ("%x\n",one&C);// Output C
+printf ("%x\n",one&D);// Output D
+
+return 0;
+}
+[style=CStyle]
+output
+A = 0
+B = 0
+C = 0
+D = 0
+\end{lstlisting}
+\end{document}
