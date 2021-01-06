@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{assignment 5}
+\author{giridharpaida1111 }
+\date{January 2021}
+
+\begin{document}
+
+\maketitle
+
+A string is clamped at both the ends and it is vibrating in 4th harmonic. the equation of the stationary wave is y=0.3 sin(0.57x) cos(200pie t). the length of the string is 
+
+solution
+
+ Y=0.3 sin(0.57x) cos(2 pie t)
+       Y=Asin(Kx)cos(wt)
+       k=0.157
+       k=2 pie / lambda
+       lambda = 40
+       lemgth of string is 
+       L = n (lambda ) / 2 
+       L = 4 (40m) /2
+       80m
+       the length of the string is 80m
+       
+\end{document}
