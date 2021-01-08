@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{assingment 5}
+\author{giridharpaida1111 }
+\date{January 2021}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction} 
+Question
+ For any two statements p and q the negation of expression p $gibvee$ q
+ $\bigvee$(~p $\bigwedge$ q)is
+ 
+ 1.$\sim$(~p $\bigwedge$ $\sim$~q
+ 
+ 2. p $\bigwedge$q
+ 
+ 3. p \ rightarrow q
+ 
+ 4.$\sim$( ~p$\bigvee$~q)
+     
+     
+solution
+
+
+ The negation of p $\bigwedge$ ($\sim$~p $\bigvee$ q) is $\sim$~(p $\bigwedge$ ($\sim$~ p $\bigvee$ q))
+  $\sim$~ {(p $\bigwedge$ $\sim$~q)} $\bigvee$ (p $\bigvee$ q),
+  
+  
+ weknow that $p\bigvee$ $\sim$~p = True
+ 
+ 
+$\sim$~(T$\bigwedge$(p$\bigvee$q),we know that True V a=a
+
+
+$\sim$~(p$\bigvee$q)
+
+
+$\sim$ ~p$\bigwedge$$\sim$~q
+ 
+ 
+ hence proved
+
+ %TRUTH TABLE:
+
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+\textit{\textbf{p}} & \textit{\textbf{q}} & \textbf{$\sim$~p} & \textbf{$\sim$~q} & \textit{\textbf{$\sim$~(p$\bigwedge$q)}} & \textit{\textbf{$\sim$(~p $\bigvee$ q)}} & \textbf{($p \bigvee q$))} & \textbf{$\sim$~(p$\bigvee$ q)} & \textbf{$\sim$p$\bigwedge$~q} \\ \hline
+ 0                  & 0                   & 1          & 1          & 0                         & 1                         & 1          & 1          & 1          \\
+ 0                   & 1                   & 1          & 0          &1                        &1                         & 1          & 0          & 0          \\
+ 1                   & 0          & 0          & 1                         & 1                         & 1          & 1          & 0            & 0 \\
+1                   & 1                   & 0          & 0          & 0                         & 0                         & 1          & 0          & 0          \\ \hline
+\end{tabular}
+\end{document}
